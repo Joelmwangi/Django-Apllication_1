@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}
+Products
+{% endblock %}
+{% block content %}
+
+  <div class="container my-5">
+        <h1 class="text-center">Our Products</h1>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://zurimall.co.ke/wp-content/uploads/2023/01/dell.jpg.webp" class="card-img-top" alt="Laptop" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Dell Inspiron 15</h5>
+                        <p class="card-text">15.6" Full HD Laptop, Intel Core i5, 8GB RAM, 256GB SSD.</p>
+                         <h6 style="color: grey;"><strike>ksh100888</strike></h6>
+                        <h6>ksh75000.00</h6>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://store.shufflepcs.co.ke/cdn/shop/files/SQUARETEMPLATE_1.jpg?v=1709655923&width=600" class="card-img-top" alt="Keyboard" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Keyboard</h5>
+                        <p class="card-text">RGB Backlit, Wired, with customizable keys.</p>
+                        <h6 style="color: grey;"><strike>ksh5000</strike></h6>
+                        <h6>ksh1500.00</h6>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/29/18/43/music-2694489_960_720.jpg" class="card-img-top" alt="Headphones" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Noise-Cancelling Headphones</h5>
+                        <p class="card-text">Wireless, 20-hour battery life, with built-in microphone.</p>
+                         <h6 style="color: grey;"><strike>ksh1500</strike></h6>
+                        <h6>ksh670.00</h6>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

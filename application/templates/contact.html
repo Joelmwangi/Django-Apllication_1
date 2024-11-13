@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Contact Us</h1>
+<div class="contact-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.734479591033!2d35.938463073538045!3d-0.3714406353074994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182987e76dbabbe9%3A0x302acc4e835baac3!2sEgerton%20University%20(Njoro%20)-Main%20Campus!5e0!3m2!1sen!2ske!4v1730979219541!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+
+
+</div>
+
+<div class="row">
+<div class="col-md-4">
+        <div class="contact-details">
+        <h2>Our Office</h2>
+        <p>Address: Njoro Road - Nakuru</p>
+        <p>Phone: 0112054071</p>
+        <p>Email: joelmwangi515@gmail.com</p>
+        <p>Working Hours: Monday - Friday, 8 AM - 5 PM</p>
+    </div>
+</div>
+<div class="col-md-6">
+    <form action="">
+    <h3>Student Register</h3>
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success" style="width: 100%; margin-bottom: 10px;">ADD STUDENT</button>
+</form>
+
+</div>
+<div class="col-md-2"></div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{% endblock %}</title>
+  {% load static %}
+    <link rel="stylesheet" href="{% static 'style/bootstrap/css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'style/main.css'%}">
+  <script src="{% static 'style/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'style/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+
+
+</head>
+<body>
+
+<div class="top">
+  <h3 style="text-align: center;"><span style="color: darkred; font-size: 30px;">Technology</span> <span style="color: #064806; font-size: 25px; margin-top: -5%;">Transforming</span> <span style="color: #196aa6; font-size: 30px;">Tomorrow</span><span style="color: #4da619; font-size: 17px;"><i>@Techpoint</i></span></h3>
+</div>
+<header>
+    <nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+  <div class="container-fluid bg-">
+    <a class="navbar-brand" href="#"><span style="color: #0f5132; font-size: 30px">T</span> ech<span style="color: #c8112d; font-size: 30px">P</span>oint</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+        </li>
+
+
+         <li class="nav-item">
+          <a class="nav-link" href="{% url 'products' %}">Products</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Accessories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Keyboard</a></li>
+            <li><a class="dropdown-item" href="#">Adapters </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Routers</a></li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">About</a>
+        </li>
+     <li class="nav-item">
+          <a class="nav-link" href="{% url 'conatct' %}">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    </nav>
+</header>
+<a href="https://wa.me/+254112054071?text=Hello, Techpoint i need a computer" class="whatsapp-float" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+    </a>
+
+{% block content %}
+
+
+{% endblock %}
+
+
+
+<footer class="bg-dark text-light pt-5 pb-4">
+  <div class="container text-center text-md-start">
+    <div class="row text-center text-md-start">
+
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h5 class="text-uppercase fw-bold text-success">TechPoint</h5>
+        <p>
+          Your one-stop shop for the latest computers and accessories. At TechPoint, we bring you quality products at unbeatable prices.
+        </p>
+      </div>
+
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h5 class="text-uppercase fw-bold text-success">Quick Links</h5>
+        <p><a href="#" class="text-light text-decoration-none">Home</a></p>
+        <p><a href="#" class="text-light text-decoration-none">Computers</a></p>
+        <p><a href="#" class="text-light text-decoration-none">About Us</a></p>
+        <p><a href="#" class="text-light text-decoration-none">Contact</a></p>
+      </div>
+
+
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h5 class="text-uppercase fw-bold text-success">Contact</h5>
+        <p><i class="fas fa-home me-2"></i>Nakuru Street, Ke 75001</p>
+        <p><i class="fas fa-envelope me-2"></i>info@techpoint.com</p>
+        <p><i class="fas fa-phone me-2"></i>+254 112 054 071</p>
+      </div>
+
+
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+        <h5 class="text-uppercase fw-bold text-success">Follow Us</h5>
+        <a href="#" class="text-light me-4"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-light me-4"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-light me-4"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-light me-4"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+
+    <div class="text-center pt-4">
+      <p class="text-muted">&copy; 2024 TechPoint. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</body>
+</html>

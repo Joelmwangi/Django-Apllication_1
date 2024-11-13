@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Welcome to our online Store</h2>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../static/images/desktop.jpg" class="d-block w-100" alt="Desktop" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="../../static/images/comp.jpg" class="d-block w-100" alt="Monitor" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="../../static/images/laptop1.jpg" class="d-block w-100" alt="Desktop" height="500">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<p style="text-align: center; padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut culpa distinctio dolor
+  ducimus eligendi enim eos eum, facere ipsa, iste maiores nisi, obcaecati odio optio quos ratione recusandae
+  rem repudiandae rerum sit temporibus velit? Consequuntur eius, eligendi explicabo hic ipsum magnam nisi officia pariatur quaerat
+  sunt? Delectus facilis minus necessitatibus neque nesciunt quasi repellendus sapiente sunt? Ea officia, porro.</p>
+
+<button class="btn btn-success" style="margin-left: 48%;">Our Products</button>
+
+<div class="jumbotron" style="background-color: whitesmoke;">
+  <div class="container">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta dolorem,
+  eos esse id, minus necessitatibus nemo nesciunt, quisquam sapiente velit veritatis? Aspernatur dicta, error eum fugit laboriosam minima natus necessitatibus nesciunt officiis optio porro quam repellendus tempore unde voluptates. Aspernatur consectetur consequatur distinctio ducimus eius esse facilis ipsa,
+  magnam modi, officia, perferendis perspiciatis ratione sapiente. Cupiditate iusto officiis voluptatum.</p>
+  </div>
+</div>
+<!-- Carousel wrapper -->
+<div
+  id="carouselVideoExample"
+  data-mdb-carousel-init class="carousel slide carousel-fade"
+  data-mdb-ride="carousel"
+>
+
+
+  <!-- Inner -->
+ <div class="carousel-inner">
+  <!-- Single item -->
+  <div class="carousel-item active">
+    <video class="img-fluid" autoplay loop muted style="height: 200px; width: 100%; object-fit: cover;">
+      <source src="https://cdn.pixabay.com/video/2016/05/12/3174-166338976_large.mp4" type="video/mp4" />
+    </video>
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Typing</h5>
+      <p>A keyboard is an essential input device for computers, allowing users to type text,
+        navigate software, and perform commands through various keys. At TechPoint, we offer a range of
+        ergonomic keyboards designed for comfortable, long-term use. Our keyboards feature cushioned,
+        responsive keys and a natural wrist angle to reduce strain. With customizable settings, wireless options,
+        and soft wrist rests, our ergonomic keyboards provide an optimal typing experience,
+        perfect for those who spend extended hours at their computer.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+{% endblock %}
